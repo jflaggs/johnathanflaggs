@@ -1,0 +1,53 @@
+
+h1, h2, h3, h4, h5 {
+   padding-top : 20px;
+}
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3
+{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.85;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1
+{
+    background-image: url("../img/theme/ppp.png"); /* cfd1, ppp, lorenz */
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2
+{
+    background-image: url("../img/theme/lorenz.png");
+    min-height: 60%;
+}
+
+/* Third image (Contact) */
+.bgimg-3
+{
+    background-image: url("../img/theme/cfd1.jpg");
+    min-height: 60%;
+}
+
+.parallax-text {
+  letter-spacing: 10px;
+  cursor: pointer;
+  font-size: 1.4em;
+  white-space: nowrap;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px)
+{
+    .bgimg-1, .bgimg-2, .bgimg-3
+    {
+        background-attachment: scroll;
+    }
+}
