@@ -1,0 +1,108 @@
+/* ----- Document ----- */
+
+* {
+  box-sizing: border-box !important;
+  font-size: 16px;
+  /* Dont set font-family here! */
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Electrolize', helvetica, sans-serif !important;
+  color: rgba(163, 25, 25, 1) !important;
+}
+
+h1,h2,h3 {
+  letter-spacing: 6px !important;
+}
+
+body, html {
+    height: 100% !important;
+    color: #111!important;
+    line-height: 1.8 !important;
+    background-color: #fff !important;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ----- Bootstrap Modifications ----- */
+
+.container-fluid {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.navbar-custom {
+  background-color: rgba(38, 38, 38, 1) !important;
+  border-bottom: 1px solid rgba(128, 128, 128, .5);
+}
+
+.navbar-nav a {
+  font-size: 1.25em !important;
+  color: rgba(128, 128, 128, 1) !important;
+  /* border-bottom: 1px solid white !important; */
+}
+
+a.navbar-brand {
+  font-size: 1.5em !important;
+  color: #fff !important;
+}
+
+.img-thumbnail {
+  border: none !important;
+}
+
+.modal p {
+  font-weight: normal !important;
+}
+
+.modal-dialog-xl {
+  width: 90% !important;
+  max-width:1200px !important;
+}
+
+.btn {
+  /* Padding in bs 4 is too much! */
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+/* ----- Custom Classes ----- */
+
+.text-dark {
+  color: black;
+}
+
+.text-light {
+  color: white;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@media (max-width:600px) {
+  .hide-sm {
+    display: none !important;
+  }
+}
+
+/* ----- Partial w3 classes ----- */
+.circle {
+  border-radius:50%;
+}
+
+.middle {
+  /* Source: https://www.w3schools.com/w3css/4/w3.css */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%)
+}
+
+.animate-opacity {
+  animation: opac 0.8s;
+} @keyframes opac { from { opacity: 0; } to { opacity: 1; } }
