@@ -1,0 +1,63 @@
+
+
+<head>
+    <title>10-Engineers Login</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	  <link rel="shortcut icon" href="img/favicon.png"/>
+    <link rel="stylesheet" href="../css/layout.css" type="text/css" media="screen"  />
+    <link rel="stylesheet" href="../css/login.css" type="text/css" media="screen"  />
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta|Electrolize|Martel"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <div include-html="../html/includes/NavBar.html"></div>
+
+  <!-- Include PHP to validate access. Otherwise, route to login screen. -->
+  
+<!-- The Login Form -->
+  <div id="login" class="container">
+    <div class="row">
+      <div class="col-sm-12" style="height: 100vh;">
+  			<form class="middle" name="login" action="" method="post">
+
+          <!-- Logo -->
+    			<div class="row text-center" style="height: 33.3%;">
+            <div class="col-sm-12">
+              <div class="logo">
+                <img class="middle" src="../img/theme/ppp.png" alt="logo">
+              </div>
+            </div>
+          </div>
+
+          <!-- Body -->
+          <div class="row text-center" style="height: 66.6%;">
+            <div class="col-sm-12">
+              <div class="login-area ">
+                <p class="login-text">JohnathanFlaggs.com: Login</p>
+          			<input class="input-box fa fa-envelope" type="text" placeholder="Username"  value="" name="username" required="" autofocus="">
+          			<input class="fa fa-lock" type="password" placeholder="Password" value="" name="password" required="">
+          			<button class="btn btn-outline-secondary btn-lg" type="submit" style="background-color: white; border: 2px solid black;">Login</button>
+              </div>
+            </div>
+          </div>
+
+  			</form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Javascript -->
+  <script src="../js/layout.js"></script>
+
+</body>
+
+</html>

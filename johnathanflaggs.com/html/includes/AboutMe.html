@@ -1,0 +1,72 @@
+
+  <div class="row text-center">
+    <div class="col-sm-12">
+      <h3>About Me</h3>
+      <p><em style="font-size: 0.9em;">"[...] For dreams too easily become the wishes of men too tired to imagine and achieve."</em></p><br>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p style="text-indent: 40px;">
+          <span style="font-size: 115%;">Let's talk software!</span> I'm a full-on software enthusiast with an addiction to learning. I graduated from the
+          University of California, Riverside with a Bachelor's Degree in Mechanical Engineering and a concentration in Control Theory. During my years at
+          <a target="_blank" href="https://www.ucr.edu">UCR</a> and
+          <a target="_blank" href="https://www.ucdavis.edu">UCD</a>, I sort of veered from my academic background and became facinated with
+          <a target="_blank" href="../html/Embedded.html">Embedded Controls</a>. Once I discovered the power of mechatronics I never looked back.
+          <br><br>
+      </p>
+      <div class="text-center">
+        <button id="hide-after-click" onclick="document.getElementById('readmore').style.display='block'; document.getElementById('hide-after-click').style.display='none';" class="btn btn-outline-secondary">Read more</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" id="readmore" style="display: none;">
+    <div class="col-sm-12">
+      <div style="float:left; max-width: 50%; margin-right: 20px; padding-right: 20px; border-right: 2px solid #aaa;">
+        <img src="img/people/me.JPG" class="img-thumbnail" alt="LinkedIn">
+      </div>
+      <div style="padding-left: 20px;">
+        <p>
+            I pursued a career in Software Development and have been very fortunate to work with some great companies and gain experience working on some very complex and
+            heavy-duty <a href="#projects">projects</a>. I've helped companies develop ground-up applications using platforms such as
+            <a target="_blank" href="https://www.rockwellautomation.com/rockwellsoftware/products/rslogix.page">RS-Logix</a>,
+            <a target="_blank" href="https://infosys.beckhoff.com/english.php?content=../content/1033/tcinfosys3/html/startpage.htm&id=16321">TwinCAT 2 and 3</a>,
+            <a target="_blank" href="https://msdn.microsoft.com/library/ff361664">C# .NET</a>, <a href="https://www.fanucamerica.com/home/">Fanuc TP</a>,
+            <a target="_blank" href="https://www.cognex.com/products/machine-vision/2d-machine-vision-systems/in-sight-5705-series">Cognex</a>,
+            <a target="_blank" href="https://www.baumer.com/us/en/product-overview/image-processing-identification/industrial-cameras/c/331">Baumer</a>,
+            and a few other controls platforms.
+            <br><br>
+
+            Along the way, I discovered my passion for business and Fin-Tech. I've dabbled in running a small business called
+            <a target="_blank" href="http://10engineers.com"><span style="font-size: 115%; font-family: 'Electrolize';">10</span><span style="font-family: 'Electrolize';">-Engineers</span></a>
+            and I also enjoy developing
+            <a target="_blank" href="https://www.investopedia.com/articles/financialcareers/08/quants-quantitative-analyst.asp">Quantitative Finance</a> /
+            <a target="_blank" href="https://www.investopedia.com/articles/active-trading/101014/basics-algorithmic-trading-concepts-and-examples.asp">Algorithmic Trading</a>
+            strategies using platforms like
+            <a target="_blank" href="https://ninjatrader.com">NinjaTrader 8</a> and
+            <a target="_blank" href="https://www.tradestation.com">TradeStation 10</a>.
+            <br><br>
+            I've recently begun developing a standalone algorithmic trading platform called
+            <a target="_blank" href="../html/Trading.html">J-LAB</a> using broker
+            <a target="_blank" href="https://www.oanda.com">API's</a> for charting data and order routing -- just to give me more flexibility and control over my trading.
+            <br><br>
+            Please feel free to <a href="#contact">contact me</a>!
+        </p>
+        <br><b>
+
+        <div class="row text-center">
+          <div class="col-sm-12">
+            <button type="button"  class="btn btn-outline-secondary" data-toggle="modal" data-target="#about-me-modal" onclick="document.getElementById('about-me-modal').style.display='block'">See Products</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Section -->
+  <div class="modal fade" id="about-me-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div include-html="html/AboutMeModal.html"></div>
+  </div>

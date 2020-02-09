@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>John Flaggs | Explore!</title>
+  <link rel="shortcut icon" type="image/png" href="../../favicon.png"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/trading.css">
+  <link rel="stylesheet" href="../css/video-gallery.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta|Electrolize|Martel"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<div include-html="../html/includes/NavBar.html"></div>
+
+<div class="container" style="padding-top: 100px; padding-bottom: 25px">
+  <div class="row text-center">
+    <div class="col-sm-12">
+      <h3>Embedded Development Projects</h3>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <h5>Don't Worry! Uploads are coming soon!</h5><hr>
+    </div>
+  </div>
+
+  <!-- Video: Color Banding Machine -->
+  <div class="row video-element">
+    <div class="col-sm-6 embedded-video">
+      <a href="#"></a>
+      <img src="../img/embedded/cube.png" alt="cube">
+      <iframe
+        src=""
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="col-sm-6 video-description">
+      <h4>16x16x16 RGB LED Cube (6-bit color)</h4>
+      <p>
+        I wanted to push the limits of the ATMEGA328p and see if I could acheive
+        6-bit color depth on a 4,096 pixel display (thats 12,288 led's!).
+        I used bit angle modulation for color control rather than pulse width
+        modulation in order to save valuable cycle time. Each layer is multiplexed
+        using standard multiplexing (future versions may use charlieplexing to save on IO).
+      </p>
+
+      <p>Reference image from <a href="http://www.0x7d.com" target="_blank">Kevin Lee</a>.
+    </div>
+  </div>
+
+</div>
+
+<!-- Javascript -->
+<script src="../js/layout.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>John Flaggs | Explore!</title>
+  <link rel="shortcut icon" type="image/png" href="../../favicon.png"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta|Electrolize|Martel"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="0">
+
+  <!-- Navigation Bar -->
+<div include-html="html/includes/NavBar.html"></div>
+
+<!-- First Parallax Image with Logo Text -->
+<div id="home" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 bgimg-1" style="height: 100vh;">
+      <p class="parallax-text middle text-light animate-opacity">Johnathan Flaggs <span class="hide-sm"> | Explore</span></p>
+    </div>
+  </div>
+</div>
+
+<!-- About me section -->
+<div id="about" class="container" style="min-height: 50vh; padding-bottom:20px;">
+  <div include-html="../html/includes/AboutMe.html"></div>
+</div>
+
+<!-- Second Parallax Image with Text -->
+<div id="projects" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 bgimg-2" style="height: 50vh;">
+      <!-- <p class="parallax-text middle text-light">Projects</p> -->
+    </div>
+  </div>
+</div>
+
+<!-- Projects Section -->
+<div class="container" style="min-height: 50vh;">
+  <div class="row text-center">
+    <div class="col-sm-12">
+      <h3>My Projects</h3><br><br>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-sm-4 ">
+      <div class="row text-center project-preview">
+        <img src="img/rack.png" alt="controls">
+        <a href="../html/Controls.html"></a>
+      </div>
+      <div class="row text-center">
+        <div class="col-sm-12 project-header">
+          <a href="../html/Controls.html" class="btn btn-outline-secondary">Controls</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 ">
+      <div class="row text-center project-preview">
+        <img src="img/chip.png" alt="embedded">
+        <a href="../html/Embedded.html"></a>
+      </div>
+      <div class="row text-center">
+        <div class="col-sm-12 project-header">
+          <a href="../html/Embedded.html" class="btn btn-outline-secondary">Embedded</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 ">
+      <div class="row text-center project-preview">
+        <img src="img/chart.png" alt="trading">
+        <a href="../html/Trading.html"></a>
+      </div>
+      <div class="row text-center">
+        <div class="col-sm-12 project-header">
+          <a href="../html/Trading.html" class="btn btn-outline-secondary">Trading</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div id="contact" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 bgimg-3" style="height: 50vh;">
+      <!-- <p class="parallax-text middle text-dark">Contact</p> -->
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <h3 class="text-center">Contact Me</h3>
+    </div>
+  </div>
+  <div class="row" style="height: 50vh;">
+    <div class="col-sm-12 contact-section">
+      <div class="middle">
+          <span class="fa fa-map-marker" style="font-size: 1.3em !important;"></span> Los Angeles, CA<br>
+          <span class="fa fa-user" style="font-size: 1.2em !important;"></span><a target="_blank" href="https://www.linkedin.com/in/johnathanflaggs/"> View My LinkedIn</a><br>
+          <span class="fa fa-address-card-o" style="font-size: 1.2em !important;"></span><a href="../html/Resume.html"> View My Resume</a><br>
+          <span class="fa fa-envelope" style="font-size: 1.2em !important;"></span><a target="_blank" href="https://www.linkedin.com/in/johnathanflaggs/"> Email Me</a><br>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<div include-html="html/includes/Footer.html"></div>
+
+<!-- Javascript -->
+<script src="js/layout.js"></script>
+
+</body>
+</html>

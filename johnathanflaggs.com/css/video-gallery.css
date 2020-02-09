@@ -1,0 +1,67 @@
+
+/* TIPS: http://ashblagdon.com/how-to-get-your-embedded-youtube-videos-to-autoplay-on-your-website/
+
+Example iframe to one of my playlist videos. I surrounded the video id in @ signs:
+
+<iframe
+  src="https://www.youtube.com/embed/ @ nsXv9bfUhn0 @ ?autoplay=0&mute=1&loop=1&playlist= @ nsXv9bfUhn0 @ &controls=0&showinfo=0&rel=0&showsearch=0&iv_load_policy=3&fs=0"
+  frameborder="0"
+  allowfullscreen>
+</iframe> */
+
+.video-element {
+
+}
+
+.embedded-video {
+  height: 33vh;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border: 2px solid rgba(128, 128, 128, .5);
+  background-color: #000;
+}
+
+.embedded-video iframe {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.embedded-video img {
+  /* If there is an image placeholder  */
+  height: 100%;
+  max-height: 100%;
+  width: auto;
+  max-width: 100%;
+  border: none;
+  overflow: hidden;
+}
+
+.embedded-video a {
+  /* Cover the Youtube Logo
+  with a blank anchor to
+  disable the Youtube link: */
+  position: absolute;
+  bottom: 0px;
+  right: 15px;
+  height: 25%;
+  width: 50%;
+}
+
+.video-description h4 {
+  padding-bottom: 15px;
+  text-align: center;
+  /* color: rgba(163, 25, 25, 1) !important; */
+  border-bottom: 1px solid gray;
+}
+
+.video-description {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.video-description p {
+}
