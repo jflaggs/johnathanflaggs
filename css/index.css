@@ -2,8 +2,9 @@
 h1, h2, h3, h4, h5 {
    padding-top : 20px;
 }
+
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3
+.bgimg-1
 {
     background-attachment: fixed;
     background-position: center;
@@ -20,20 +21,6 @@ h1, h2, h3, h4, h5 {
 {
     background-image: url("../img/theme/ppp.png"); /* cfd1, ppp, lorenz */
     min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2
-{
-    background-image: url("../img/theme/lorenz.png");
-    min-height: 60%;
-}
-
-/* Third image (Contact) */
-.bgimg-3
-{
-    background-image: url("../img/theme/cfd1.jpg");
-    min-height: 60%;
 }
 
 .parallax-text {

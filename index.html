@@ -8,22 +8,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/projects.css">
-  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta|Electrolize|Martel"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="0">
+    
+<!-- Hamburger menu -->
+<div id="menu">
+  <div id="menu-bar" onclick="menuOnClick()">
+    <div id="bar1" class="bar"></div>
+    <div id="bar2" class="bar"></div>
+    <div id="bar3" class="bar"></div>
+  </div>
+  <nav class="nav" id="nav">
+    <ul>
+      <li><a href="http://www.controls.johnathanflaggs.com">Controls</a></li>
+      <li><a href="http://www.fintech.johnathanflaggs.com">FinTech</a></li>
+      <li><a href="http://www.consulting.johnathanflaggs.com">Consulting</a></li>
+      <li><a href="http://www.academics.johnathanflaggs.com">Academics</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav> 
+</div>
 
-  <!-- Navigation Bar -->
-<div w3-include-html="html/includes/NavBar.html"></div>
-
+<div class="menu-bg" id="menu-bg"></div>
+    
+    
 <!-- First Parallax Image with Logo Text -->
 <div id="home" class="container-fluid">
   <div class="row">
@@ -33,45 +49,11 @@
   </div>
 </div>
 
-<!-- About me section -->
-<div id="about" class="container" style="min-height: 50vh; padding-bottom:20px;">
-  <div include-html="../html/includes/AboutMe.html"></div>
-</div>
-
-<!-- Third Parallax Image with Portfolio Text -->
-<div id="contact" class="container-fluid">
-  <div class="row">
-    <div class="col-sm-12 bgimg-2" style="height: 50vh;">
-      <!-- <p class="parallax-text middle text-dark">Contact</p> -->
-    </div>
-  </div>
-</div>
-
-<!-- Contact Section -->
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12">
-      <h3 class="text-center">Contact Me</h3>
-    </div>
-  </div>
-  <div class="row" style="height: 50vh;">
-    <div class="col-sm-12 contact-section">
-      <div class="middle">
-          <span class="fa fa-map-marker" style="font-size: 1.3em !important;"></span> Los Angeles, CA<br>
-          <span class="fa fa-user" style="font-size: 1.2em !important;"></span><a target="_blank" href="https://www.linkedin.com/in/johnathanflaggs/"> View My LinkedIn</a><br>
-          <span class="fa fa-address-card-o" style="font-size: 1.2em !important;"></span><a href="../html/Resume.html"> View My Resume</a><br>
-          <span class="fa fa-envelope" style="font-size: 1.2em !important;"></span><a target="_blank" href="https://www.linkedin.com/in/johnathanflaggs/"> Email Me</a><br>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Footer -->
-<div include-html="html/includes/Footer.html"></div>
 
 <!-- Javascript -->
 <script src="js/layout.js"></script>
+<script src="js/menu.js"></script>
+
 
 </body>
 </html>
