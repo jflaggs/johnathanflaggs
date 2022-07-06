@@ -1,0 +1,13 @@
+My understanding of the root website certificate problem & solution:
+
+Since www is a subdomain of the apex website we will run into an issue when creating a repo for apex.com and www.apex.com. 
+Specifically, it's possible that apex.com will work in the url box, but www.apex.com will produce a certificate/privacy error. 
+We could create a second repo in gh pages for both apex.com and www.apex.com, but then we'd have to maintain two copies. 
+The trick is to get github to generate a certificate for both apex.com and www.apex.com, but ultimately only keep one.
+The certificate will persist for both urls, but we only need to maintain one repo. 
+
+Note that you have to configure the DNS with the A record (Record A, Host www, Value ip_address_here) AND CNAME record 
+(Record CNAME, Host www, username.github.io) so that github pages can run a DNS check. The certificate is subsequently created.
+
+Reference:
+https://stackoverflow.com/questions/54817253/github-pages-https-www-redirect
